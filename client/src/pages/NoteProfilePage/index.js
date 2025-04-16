@@ -1,0 +1,1 @@
+export { NoteProfilePage } from './NoteProfilePage'
