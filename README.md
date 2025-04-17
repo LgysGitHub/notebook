@@ -5,7 +5,7 @@
 ### 运行后端
 ```
   cd /server
-  npm i
+  yarn install
   npm run start
 ```
 ### 运行前端
