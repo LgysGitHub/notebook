@@ -18,7 +18,7 @@ export async function getNoteProfileById(id) {
   }
 
   return await postFetch(
-    `${Endpoints.NOTE_PROFILE}`,
+    `${Endpoints.NOTE_PROFILE}/${id}`,
     reqPayload
   )
 }

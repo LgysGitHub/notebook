@@ -17,9 +17,9 @@ router.post(Endpoints.GET_NOTE_LIST, async (_req,res) => {
   }
 })
 
-router.post(Endpoints.NOTE_PROFILE, async (req,res) => {
+router.post(`${Endpoints.NOTE_PROFILE}/:id`, async (req,res) => {
   try{
-    const { id } = req.body
+    const id = req.params.id
     const data = await getNoteProfileBy(id)
     
     res.json(data)
